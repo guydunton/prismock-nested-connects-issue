@@ -10,6 +10,8 @@ npx prisma migrate dev
 npm run test
 ```
 
+I've also provided a script which runs the same code against Prisma which does not error.
+
 ## The issue
 
 The error appears as follows:
