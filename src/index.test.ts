@@ -33,14 +33,12 @@ it('does not error connecting through 2 references', async () => {
       id: address.id,
     },
     data: {
-      address: '142 New Street',
       User: {
         update: {
           where: {
             id: userId,
           },
           data: {
-            name: 'Administrator 1',
             groups: {
               connect: [{ id: group1.id }],
             },
